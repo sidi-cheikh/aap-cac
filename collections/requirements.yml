@@ -1,3 +1,4 @@
 ---
 collections:
   - name: configify.aapconfig
+    version: '2.4.1'
