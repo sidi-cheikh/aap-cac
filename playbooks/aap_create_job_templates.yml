@@ -7,10 +7,10 @@
   pre_tasks:
     - name: Include vars from cac directory
       ansible.builtin.include_vars:
+        name: controller_templates 
         dir: ../platform_configs
         ignore_files: [controller_config.yml.template]
         extensions: ["yml"]
-        hash_behaviour: merge
   roles:
     - role: infra.aap_configuration.controller_job_templates
       when: controller_templates is defined
