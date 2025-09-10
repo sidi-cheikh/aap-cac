@@ -1,5 +1,9 @@
 ---
 - name: this is a cac helloworld created job controller_templates
+  hosts: localhost
+  connection: local
+
   tasks:
-    - debug:
-      message: "It worked"
+    - name: print success message
+      debug:
+       message: "It worked"
