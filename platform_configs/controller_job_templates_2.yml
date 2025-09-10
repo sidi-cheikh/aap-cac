@@ -1,0 +1,11 @@
+---
+controller_templates:
+- name: "AAP CaC: helloworld CaC created template 2"
+  job_type: run
+  inventory: Empty
+  project: GitHub/sidi-cheikh/aap-cac
+  playbook: playbooks/cac_test.yml
+  credentials:
+  - dummy
+  survey: {}
+  extra_vars: ""
