@@ -1,6 +1,6 @@
 ---
 controller_templates:
-- name: CaC helloworld template
+- name: "AAP CaC: helloworld CaC created template"
   job_type: run
   inventory: Empty
   project: GitHub/sidi-cheikh/aap-cac
