@@ -2,7 +2,7 @@
 controller_templates:
 - name: CaC helloworld template
   job_type: run
-  inventory: Demo Inventory
+  inventory: Empty
   project: GitHub/sidi-cheikh/aap-cac
   playbook: playbooks/cac_test.yml
   credentials:
