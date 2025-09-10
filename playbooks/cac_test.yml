@@ -1,0 +1,5 @@
+---
+- name: this is a cac helloworld created job controller_templates
+  tasks:
+    - debug:
+      message: "It worked"

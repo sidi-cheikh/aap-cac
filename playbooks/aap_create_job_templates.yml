@@ -1,0 +1,14 @@
+---
+- name: test creating a job template via CaC
+  hosts: localhost
+  connection: local
+  gather_facts: false
+
+  pre_tasks:
+    - name: Include vars from cac directory
+      ansible.builtin.include_vars:
+        dir: ../platform_configs
+        ignore_files: [controller_config.yml.template]
+        extensions: ["yml"]
+  roles:
+    - {role: infra.aap_configuration.controller_job_templates, when: controller_templates is defined}
